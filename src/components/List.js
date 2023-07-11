@@ -6,19 +6,20 @@ function Task(props) {
 
 function List(props) {
 
-	let tasks = [];
-
-	for (let i = 0; i < props.tasks.length; i++) {
-		let description = props.tasks[i].description;
-		let completed = props.tasks[i].completed;
-		tasks.push(<Task description={description} completed={completed} />);
-	}
+	//// Old For Loop
+	// let tasks = [];
+	// for (let i = 0; i < props.tasks.length; i++) {
+	// 	let description = props.tasks[i].description;
+	// 	let completed = props.tasks[i].completed;
+	// 	tasks.push(<Task description={description} completed={completed} />);
+	// }
 
 	return (
 		<div>
 			<h1>{ props.heading }</h1>
 			<ul>
-				{ tasks }
+				{/* { tasks } */}
+				{ props.tasks.map(task => <Task description={task.description} completed={task.completed} />) }
 			</ul>
 		</div>
 	);
