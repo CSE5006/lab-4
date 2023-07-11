@@ -1,11 +1,17 @@
+function Task(props) {
+	return (
+		<li>{ props.description }</li>
+	);
+}
+
 function List(props) {
 	return (
 		<div>
 			<h1>{ props.heading }</h1>
 			<ul>
-				<li>Learn React</li>
-				<li>Learn JSX</li>
-				<li>Build a React App</li>
+				<Task description='Learn React'/>
+				<Task description='Learn JSX'/>
+				<Task description='Build a React App'/>
 			</ul>
 		</div>
 	);
