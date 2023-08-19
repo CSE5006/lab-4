@@ -2,14 +2,16 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+### Start the development server
 
-In the project directory, you can run:
+### Option 1: To run the project with Docker:
+#### `docker compose up`
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Option 2: If you have npm installed locally, you can run:
+#### `npm start`
+
+Then, open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
